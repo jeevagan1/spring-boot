@@ -12,4 +12,12 @@ jobs:
     steps:
       - checkout
       - run: java --version
-      - run: gradle build  
+      - run: gradle --version 
+
+jobs:
+  demo: 
+    docker:
+      - image: cimg/python
+    steps: 
+      - checkout
+      - run: python --version
