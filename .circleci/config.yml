@@ -13,8 +13,7 @@ jobs:
       - checkout
       - run: java --version
       - run: gradle --version 
-
-jobs:
+      
   demo: 
     docker:
       - image: cimg/python
