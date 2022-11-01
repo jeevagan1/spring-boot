@@ -3,7 +3,6 @@ workflows:
   test-deploy:
     jobs:
       - test
-      - demo
 
 jobs:
   test:
@@ -12,11 +11,4 @@ jobs:
     steps:
       - checkout
       - run: java --version
-      - run: gradle --version 
-
-  demo: 
-    docker:
-      - image: cimg/python
-    steps: 
-      - checkout
-      - run: python --version
+      - run: gradle clean build
