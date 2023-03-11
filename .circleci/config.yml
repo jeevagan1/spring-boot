@@ -11,4 +11,4 @@ jobs:
     steps:
       - checkout
       - run: java --version
-      - run: gradle clean build
+      - run: gradle --version
