@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-gitlab-service
+  annotations:
+    gitlab.com/instance: gitlab.com
+    gitlab.com/project-slug: mygroup/myproject
+spec:
+  type: service
+  lifecycle: production
+  owner: my-team
