@@ -1,12 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: code8-backend
+  name: code8be
   description: Backend service for Code8
-spec:
-  type: service
-  owner: team-a
-  lifecycle: production
-  system: backend
   annotations:
     gitlab.com/project-slug: DOL/code8-backend/code8be
+    backstage.io/source-location: url:https://dlabsgitlab.devopslabs.tech/DOL/code8-backend/code8be.git
+spec:
+  type: service
+  lifecycle: production
+  owner: dol-team
+  system: code8
