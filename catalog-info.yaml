@@ -3,19 +3,12 @@ kind: Component
 metadata:
   name: code8be
   description: Backend service for Code8 application
-  tags:
-    - backend
-    - gitlab
-    - nodejs # Change this if you're using a different stack
   annotations:
-    dlabsgitlab.devopslabs.tech/project-slug: DOL/code8-backend/code8be
+    dlabsgitlab.devopslabs.tech/project-id: '43'
     backstage.io/source-location: url:https://dlabsgitlab.devopslabs.tech/DOL/code8-backend/code8be
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: production
-  owner: dol-team # Replace with your actual team or owner group
+  owner: dol-team
   system: code8
-
-
-
