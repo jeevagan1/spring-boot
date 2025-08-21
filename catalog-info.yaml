@@ -1,18 +1,8 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
 metadata:
-  name: code8be
-  description: Backend service for Code8 application
-  tags:
-    - backend
-    - gitlab
-    - nodejs # Change this if you're using a different stack
-  annotations:
-    gitlab.com/project-slug: DOL/code8-backend/code8be
-    backstage.io/source-location: url:https://dlabsgitlab.devopslabs.tech/DOL/code8-backend/code8be.git
-    backstage.io/techdocs-ref: dir:.
+  name: code8-backend
 spec:
   type: service
+  owner: team-a
   lifecycle: production
-  owner: dol-team # Replace with your actual team or owner group
-  system: code8
+annotations:
+  gitlab.com/project-slug: DOL/code8-backend/code8be
