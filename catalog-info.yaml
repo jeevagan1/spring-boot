@@ -8,7 +8,7 @@ metadata:
     - gitlab
     - nodejs # Change this if you're using a different stack
   annotations:
-    gitlab.com/project-slug: DOL/code8-backend/code8be
+    #gitlab.com/project-slug: DOL/code8-backend/code8be
     gitlab.com/project-id: '43'
     backstage.io/source-location: url:https://dlabsgitlab.devopslabs.tech/DOL/code8-backend/code8be.git
     backstage.io/techdocs-ref: dir:.
@@ -17,4 +17,5 @@ spec:
   lifecycle: production
   owner: dol-team # Replace with your actual team or owner group
   system: code8
+
 
